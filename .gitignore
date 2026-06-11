@@ -1,0 +1,18 @@
+# Visual Studio 빌드 결과물
+x64/
+Debug/
+Release/
+*.user
+*.suo
+.vs/
+
+# 오브젝트 및 바이너리
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+# NuGet 패키지는 복원 가능하므로 제외
+packages/
