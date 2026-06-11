@@ -6,6 +6,7 @@
 |------|------|
 | `temp_docs/spec.md` | 불변 요구사항 명세 — 모든 코드 변경 시 준수 필수 |
 | `temp_docs/PLAN.md` | 리팩토링 단계별 계획 |
+| `docs/commit_convention.md` | 커밋 메시지 작성 규칙 — 모든 커밋 시 준수 필수 |
 
 ## 코드 변경 전 체크리스트
 
