@@ -16,3 +16,6 @@ Release/
 
 # NuGet 패키지는 복원 가능하므로 제외
 packages/
+
+# 토큰 등 민감 정보 포함 가능
+.mcp.json
