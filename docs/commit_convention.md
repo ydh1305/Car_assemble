@@ -56,9 +56,9 @@
 
 ```
 # 좋은 예
-feat(part): add NoEngine class for optional engine selection
-fix(util): remove obsolete part-type enums causing name conflict
-refactor(assembler): extract processSelection into selectPart
+[feat][part]: add NoEngine class for optional engine selection
+[fix][util]: remove obsolete part-type enums causing name conflict
+[refactor][assembler]: extract processSelection into selectPart
 
 # 나쁜 예
 Fixed some bugs.
@@ -75,7 +75,7 @@ feat: 여러 가지 변경사항 추가
 - 글머리 기호(`-`) 사용 가능
 
 ```
-refactor(validator): inject rules via constructor for testability
+[refactor][validator]: inject rules via constructor for testability
 
 Default constructor creates 5 rules internally; overloaded constructor
 accepts an external vector so unit tests can inject mocks without
@@ -98,7 +98,7 @@ touching the real rule implementations.
 ## 전체 예시
 
 ```
-feat(rule): add BoschMismatchRule for steering compatibility
+[feat][rule]: add BoschMismatchRule for steering compatibility
 
 Bosch brake requires Bosch steering — mismatched combination must fail
 validation per spec §3 Rule 5.
@@ -107,7 +107,7 @@ Closes #12
 ```
 
 ```
-fix(util): remove obsolete CarType/Engine/brakeSystem/SteeringSystem enums
+[fix][util]: remove obsolete CarType/Engine/brakeSystem/SteeringSystem enums
 
 SUV enumerator (value=2) conflicted with class SUV in the same namespace,
 causing C2365 compilation errors in Phase3_CarValidatorTests.cpp.
