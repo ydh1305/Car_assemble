@@ -128,6 +128,48 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Tests\Phase1_UtilTests.cpp" />
+    <ClCompile Include="Tests\Phase2_PartTests.cpp" />
+    <ClCompile Include="Tests\Phase3_RuleTests.cpp" />
+    <ClCompile Include="Tests\Phase3_CarValidatorTests.cpp" />
+    <ClCompile Include="Tests\Phase3_PartRegistryTests.cpp" />
+    <ClCompile Include="Tests\Phase3_CarAssemblerTests.cpp" />
+    <ClCompile Include="CarValidator.cpp" />
+    <ClCompile Include="PartRegistry.cpp" />
+    <ClCompile Include="CarPrinter.cpp" />
+    <ClCompile Include="CarAssembler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="ICarPart.h" />
+    <ClInclude Include="ICarType.h" />
+    <ClInclude Include="IEngine.h" />
+    <ClInclude Include="IBrakeSystem.h" />
+    <ClInclude Include="ISteeringSystem.h" />
+    <ClInclude Include="ICompatibilityRule.h" />
+    <ClInclude Include="ICarPrinter.h" />
+    <ClInclude Include="CarConfig.h" />
+    <ClInclude Include="CarValidator.h" />
+    <ClInclude Include="PartRegistry.h" />
+    <ClInclude Include="CarPrinter.h" />
+    <ClInclude Include="CarAssembler.h" />
+    <ClInclude Include="CarTypes\Sedan.h" />
+    <ClInclude Include="CarTypes\SUV.h" />
+    <ClInclude Include="CarTypes\Truck.h" />
+    <ClInclude Include="Engines\GMEngine.h" />
+    <ClInclude Include="Engines\ToyotaEngine.h" />
+    <ClInclude Include="Engines\WIAEngine.h" />
+    <ClInclude Include="Engines\NoEngine.h" />
+    <ClInclude Include="BrakeSystems\MandoBrake.h" />
+    <ClInclude Include="BrakeSystems\ContinentalBrake.h" />
+    <ClInclude Include="BrakeSystems\BoschBrake.h" />
+    <ClInclude Include="SteeringSystems\BoschSteering.h" />
+    <ClInclude Include="SteeringSystems\MobisSteering.h" />
+    <ClInclude Include="Rules\SedanContinentalRule.h" />
+    <ClInclude Include="Rules\SuvToyotaRule.h" />
+    <ClInclude Include="Rules\TruckWIARule.h" />
+    <ClInclude Include="Rules\TruckMandoRule.h" />
+    <ClInclude Include="Rules\BoschMismatchRule.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
